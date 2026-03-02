@@ -1,1 +1,222 @@
-
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yves Dev - Création de sites web professionnels</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        h1 {
+            text-align: center;
+            color: #333;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            text-align: center;
+            color: #666;
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 20px;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+        
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+        }
+        
+        .card-header {
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+        }
+        
+        .restaurant .card-header {
+            background: linear-gradient(135deg, #f1c40f, #f39c12);
+        }
+        
+        .boutique .card-header {
+            background: linear-gradient(135deg, #00b4d8, #0077b6);
+        }
+        
+        .coiffure .card-header {
+            background: linear-gradient(135deg, #1abc9c, #16a085);
+        }
+        
+        .card-content {
+            padding: 25px;
+            text-align: center;
+        }
+        
+        .card-content h3 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        
+        .card-content p {
+            color: #666;
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 10px 25px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+        
+        .btn:hover {
+            background: #764ba2;
+        }
+        
+        .restaurant .btn { background: #f39c12; }
+        .restaurant .btn:hover { background: #e67e22; }
+        
+        .boutique .btn { background: #0077b6; }
+        .boutique .btn:hover { background: #023e8a; }
+        
+        .coiffure .btn { background: #16a085; }
+        .coiffure .btn:hover { background: #1abc9c; }
+        
+        .contact {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 40px;
+            border-top: 2px solid #f0f0f0;
+        }
+        
+        .contact h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        
+        .whatsapp-btn {
+            display: inline-block;
+            padding: 15px 40px;
+            background: #25D366;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 10px 20px rgba(37, 211, 102, 0.3);
+        }
+        
+        .whatsapp-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(37, 211, 102, 0.4);
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #999;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Yves Dev</h1>
+        <p class="subtitle">Création de sites web professionnels pour commerces et artisans</p>
+        
+        <div class="grid">
+            <!-- Carte Restaurant -->
+            <a href="restaurant/" class="card restaurant">
+                <div class="card-header">🍽️</div>
+                <div class="card-content">
+                    <h3>Restaurant</h3>
+                    <p>Site vitrine pour restaurant avec menu, photos et commande WhatsApp</p>
+                    <span class="btn">Voir l'exemple</span>
+                </div>
+            </a>
+            
+            <!-- Carte Boutique -->
+            <a href="vetement/" class="card boutique">
+                <div class="card-header">👕</div>
+                <div class="card-content">
+                    <h3>Boutique de vêtements</h3>
+                    <p>Vitrine en ligne pour vos articles avec demande de disponibilité</p>
+                    <span class="btn">Voir l'exemple</span>
+                </div>
+            </a>
+            
+            <!-- Carte Coiffure -->
+            <a href="site-coiffure/" class="card coiffure">
+                <div class="card-header">💇</div>
+                <div class="card-content">
+                    <h3>Salon de coiffure</h3>
+                    <p>Présentation des services, tarifs et prise de rendez-vous</p>
+                    <span class="btn">Voir l'exemple</span>
+                </div>
+            </a>
+        </div>
+        
+        <div class="contact">
+            <h2>📞 Vous voulez le même pour votre commerce ?</h2>
+            <a href="https://wa.me/2250700000000?text=Bonjour%20Yves%2C%20je%20souhaite%20avoir%20des%20informations%20sur%20vos%20sites%20vitrines" 
+               class="whatsapp-btn" 
+               target="_blank">
+                📱 Me contacter sur WhatsApp
+            </a>
+        </div>
+        
+        <footer>
+            <p>© 2026 Yves Dev - Tous droits réservés</p>
+        </footer>
+    </div>
+</body>
+</html>
