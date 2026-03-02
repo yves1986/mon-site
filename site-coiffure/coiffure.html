@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salon Beauté Africaine</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            background: #e0f2f1;
+        }
+
+        .hero {
+            background: linear-gradient(160deg, #1abc9c, #16a085);
+            color: white;
+            text-align: center;
+            padding: 90px 20px;
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+
+        .services {
+            max-width: 1000px;
+            margin: 40px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            padding: 40px 20px;
+        }
+
+        .card {
+            background: white;
+            width: 280px;
+            border-radius: 30px;
+            overflow: hidden;
+            box-shadow: 0 20px 30px rgba(26, 188, 156, 0.2);
+            transition: all 0.4s ease;
+            text-align: center;
+            border: 2px solid white;
+        }
+
+        .card:hover {
+            transform: rotate(1deg) scale(1.03);
+            border-color: #1abc9c;
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 25px 15px;
+        }
+
+        .card h3 {
+            color: #16a085;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .card .prix {
+            background: #1abc9c;
+            color: white;
+            font-weight: bold;
+            padding: 8px 25px;
+            border-radius: 40px;
+            display: inline-block;
+            margin: 15px 0;
+            font-size: 1.2rem;
+        }
+
+        .btn-rdv {
+            background: transparent;
+            border: 2px solid #1abc9c;
+            color: #1abc9c;
+            padding: 10px 25px;
+            border-radius: 40px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+            display: inline-block;
+        }
+
+        .btn-rdv:hover {
+            background: #1abc9c;
+            color: white;
+        }
+
+        .contact {
+            background: #006064;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+            margin-top: 60px;
+        }
+
+        .contact h2 {
+            color: #b2ebf2;
+            margin-bottom: 20px;
+        }
+
+        .horaires {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            margin: 30px 0;
+        }
+
+        .jour {
+            font-weight: bold;
+            color: #b2ebf2;
+        }
+
+        .btn-contact {
+            background: #1abc9c;
+            color: white;
+            padding: 15px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 30px;
+            transition: 0.3s;
+        }
+
+        .btn-contact:hover {
+            background: #16a085;
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hero">
+        <h1>💇 Salon Beauté Africaine</h1>
+        <p>Coiffure, tresses, soins – Marcory, Abidjan</p>
+    </div>
+
+    <div class="services">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?w=300" alt="Coupe">
+            <div class="card-content">
+                <h3>Coupe femme</h3>
+                <div class="prix">5 000 F</div>
+                <a class="btn-rdv"
+                    href="https://wa.me/2250700000000?text=Bonjour%2C%20je%20souhaite%20prendre%20RDV%20pour%20une%20coupe">Prendre
+                    RDV</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?w=300" alt="Tresses">
+            <div class="card-content">
+                <h3>Tresses</h3>
+                <div class="prix">15 000 F</div>
+                <a class="btn-rdv"
+                    href="https://wa.me/2250700000000?text=Bonjour%2C%20je%20souhaite%20prendre%20RDV%20pour%20des%20tresses">Prendre
+                    RDV</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=300" alt="Soin">
+            <div class="card-content">
+                <h3>Soin capillaire</h3>
+                <div class="prix">7 000 F</div>
+                <a class="btn-rdv"
+                    href="https://wa.me/2250700000000?text=Bonjour%2C%20je%20souhaite%20un%20soin%20capillaire">Prendre
+                    RDV</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact">
+        <h2>📍 Marcory, Abidjan</h2>
+        <p>📞 07 00 00 00 00</p>
+
+        <div class="horaires">
+            <div><span class="jour">Lun-Ven :</span> 9h - 19h</div>
+            <div><span class="jour">Sam :</span> 10h - 18h</div>
+        </div>
+
+        <a class="btn-contact"
+            href="https://wa.me/2250700000000?text=Bonjour%2C%20je%20souhaite%20réserver%20un%20créneau">📱 Réserver sur
+            WhatsApp</a>
+    </div>
+
+    <script>
+        // Effet machine à écrire sur le titre
+        const titre = document.querySelector('.hero h1');
+        const originalText = titre.innerText;
+        titre.innerText = '';
+
+        let i = 0;
+        function typeWriter() {
+            if (i < originalText.length) {
+                titre.innerHTML += originalText.charAt(i);
+                i++;
+                setTimeout(typeWriter, 50);
+            }
+        }
+        typeWriter();
+    </script>
+</body>
+
+</html>

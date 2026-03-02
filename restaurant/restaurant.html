@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Le Délice</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, sans-serif;
+        }
+
+        body {
+            background: #fef9e7;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            background: linear-gradient(135deg, #f1c40f, #f39c12);
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            opacity: 0.95;
+        }
+
+        /* MENU SECTION */
+        .menu {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(241, 196, 15, 0.15);
+        }
+
+        .menu h2 {
+            text-align: center;
+            font-size: 2.2rem;
+            color: #f39c12;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .menu h2::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: #f1c40f;
+            margin: 10px auto 0;
+            border-radius: 2px;
+        }
+
+        .plat {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+            border-bottom: 1px dashed #f1c40f;
+            transition: all 0.3s ease;
+        }
+
+        .plat:hover {
+            transform: translateX(10px);
+            background: rgba(241, 196, 15, 0.05);
+            padding-left: 15px;
+            border-radius: 10px;
+        }
+
+        .plat span {
+            font-size: 1.2rem;
+            color: #2c3e50;
+        }
+
+        .plat strong {
+            background: #f1c40f;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 30px;
+            font-size: 1.1rem;
+        }
+
+        /* GALERIE SIMPLE */
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            max-width: 900px;
+            margin: 40px auto;
+            flex-wrap: wrap;
+        }
+
+        .gallery img {
+            width: 250px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 30px rgba(241, 196, 15, 0.3);
+        }
+
+        /* CONTACT */
+        .contact {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+            margin-top: 60px;
+        }
+
+        .contact p {
+            margin: 10px 0;
+            font-size: 1.2rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 35px;
+            background: #f1c40f;
+            color: #2c3e50;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(241, 196, 15, 0.3);
+        }
+
+        .btn:hover {
+            background: #f39c12;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(241, 196, 15, 0.5);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hero">
+        <h1>🍽️ Restaurant Le Délice</h1>
+        <p>Gastronomie traditionnelle et moderne – Cocody, Abidjan</p>
+    </div>
+
+    <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=250" alt="Plat 1">
+        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=250" alt="Plat 2">
+        <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=250" alt="Plat 3">
+    </div>
+
+    <div class="menu">
+        <h2>Notre Menu</h2>
+        <div class="plat"><span>🐟 Poisson braisé + alloco</span> <strong>3 500 F</strong></div>
+        <div class="plat"><span>🍛 Mafé</span> <strong>3 000 F</strong></div>
+        <div class="plat"><span>🍗 Poulet yassa</span> <strong>4 000 F</strong></div>
+        <div class="plat"><span>🍚 Garba</span> <strong>1 500 F</strong></div>
+        <div class="plat"><span>🥗 Salade complète</span> <strong>2 500 F</strong></div>
+    </div>
+
+    <div class="contact">
+        <p>📍 Cocody, Angré – Abidjan</p>
+        <p>📞 07 00 00 00 00</p>
+        <a class="btn" href="https://wa.me/2250700000000?text=Bonjour%2C%20je%20souhaite%20commander">📱 Commander sur
+            WhatsApp</a>
+    </div>
+
+    <script>
+        // Petite animation : changement de couleur de l'en-tête au scroll
+        window.addEventListener('scroll', function () {
+            const hero = document.querySelector('.hero');
+            if (window.scrollY > 50) {
+                hero.style.opacity = '0.95';
+                hero.style.padding = '60px 20px';
+            } else {
+                hero.style.opacity = '1';
+                hero.style.padding = '80px 20px';
+            }
+        });
+    </script>
+</body>
+
+</html>

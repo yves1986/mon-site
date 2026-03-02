@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boutique Style Africain</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #f0f8ff;
+        }
+
+        .hero {
+            background: linear-gradient(145deg, #00b4d8, #0077b6);
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+            border-bottom: 8px solid #ffd700;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            text-shadow: 2px 2px 0 #ffd700;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            opacity: 0.95;
+        }
+
+        .produits {
+            max-width: 1000px;
+            margin: 40px auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            padding: 20px;
+        }
+
+        .carte {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0, 180, 216, 0.2);
+            transition: all 0.3s ease;
+            border: 1px solid #ffd70033;
+        }
+
+        .carte:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 30px rgba(255, 215, 0, 0.3);
+        }
+
+        .carte-img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .carte-content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .carte h3 {
+            color: #0077b6;
+            margin-bottom: 10px;
+        }
+
+        .carte .prix {
+            background: #ffd700;
+            color: #0077b6;
+            font-weight: bold;
+            padding: 8px 15px;
+            border-radius: 30px;
+            display: inline-block;
+            margin: 15px 0;
+        }
+
+        .badge {
+            background: #00b4d8;
+            color: white;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+
+        .btn-wa {
+            background: #25D366;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 30px;
+            display: inline-block;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
+
+        .btn-wa:hover {
+            background: #128C7E;
+            transform: scale(1.05);
+        }
+
+        .contact {
+            background: #023047;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+            margin-top: 60px;
+        }
+
+        .contact h3 {
+            color: #ffd700;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hero">
+        <h1>👗 Style Africain</h1>
+        <p>Élégance et modernité – Marcory, Abidjan</p>
+    </div>
+
+    <div class="produits">
+        <div class="carte">
+            <img class="carte-img" src="https://images.unsplash.com/photo-1539008835657-9e8e9680c956?w=300" alt="Robe">
+            <div class="carte-content">
+                <h3>Robe fleurie <span class="badge">Nouveau</span></h3>
+                <p class="prix">15 000 F</p>
+                <a class="btn-wa"
+                    href="https://wa.me/2250700000000?text=Bonjour%2C%20robe%20fleurie%20disponible%20%3F">📱
+                    Demander</a>
+            </div>
+        </div>
+        <div class="carte">
+            <img class="carte-img" src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=300"
+                alt="Chemise">
+            <div class="carte-content">
+                <h3>Chemise casual</h3>
+                <p class="prix">8 500 F</p>
+                <a class="btn-wa"
+                    href="https://wa.me/2250700000000?text=Bonjour%2C%20chemise%20casual%20disponible%20%3F">📱
+                    Demander</a>
+            </div>
+        </div>
+        <div class="carte">
+            <img class="carte-img" src="https://images.unsplash.com/photo-1473966968600-fa801b869a1a?w=300"
+                alt="Pantalon">
+            <div class="carte-content">
+                <h3>Pantalon chic</h3>
+                <p class="prix">12 000 F</p>
+                <a class="btn-wa"
+                    href="https://wa.me/2250700000000?text=Bonjour%2C%20pantalon%20chic%20disponible%20%3F">📱
+                    Demander</a>
+            </div>
+        </div>
+        <div class="carte">
+            <img class="carte-img" src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=300"
+                alt="Ensemble">
+            <div class="carte-content">
+                <h3>Ensemble traditionnel</h3>
+                <p class="prix">25 000 F</p>
+                <a class="btn-wa"
+                    href="https://wa.me/2250700000000?text=Bonjour%2C%20ensemble%20traditionnel%20disponible%20%3F">📱
+                    Demander</a>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+
+</html>
